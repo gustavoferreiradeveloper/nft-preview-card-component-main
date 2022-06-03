@@ -1,3 +1,3 @@
 NFT Preview Card Component Main
 
-Projeto do Front End Mentor
+Projeto retirado do site frontendmentor para treino, desafio de cartão de NFT!
