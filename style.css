@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --fontColorUm: #8bacda;
+    --fontColorDestak: #00fff7;
+    --colorMain:hsl(217, 54%, 11%);
+    --colorCard:hsl(216, 50%, 16%);
+    --line:hsl(215, 32%, 27%);
+    --white:hsl(0, 0%, 100%);
+    --font-size-paragraph:18px;
+    --radius: 0.7em;
+    --color-hover: #00fff766;
+}
+
+body{
+    background-color: var(--colorMain);
+    font-family: "Outfit";
+}
+
+main{
+    width: 370px;
+    background-color: var(--colorCard);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    margin: 10px auto;
+}
+
+main .nft{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.overlay {
+    opacity: 0;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.overlay:hover {    
+    background: var(--color-hover);
+    opacity: 1;
+    cursor: pointer;
+}
+
+article{
+    color: var(--white);
+    margin: 20px 35px;
+}
+
+article h1{
+    font-size: 22px;
+}
+
+article h1:hover{
+    color: var(--fontColorDestak);
+    cursor: pointer;
+}
+
+article p{
+    margin-top: 20px;
+    color: var(--fontColorUm);
+    font-size: var(--font-size-paragraph);
+    font-weight: 300;
+}
+
+.sectionInfo{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.price{
+    color: var(--fontColorDestak);
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.price img{
+    width: 12px;
+    height: 20px;
+}
+
+.price h2{
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+.days{
+    color: var(--fontColorUm);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.days img{
+    width: 20px;
+    height: 20px;
+}
+
+.days h2{
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+hr{
+    margin-top: 25px;
+    width: 300px;
+    border: 0;
+    border-top: 1px solid var(--line);
+}
+
+.sectionAvatar{
+    display: flex;
+    width: 300px;
+    margin: 20px 0 30px;
+}
+
+section .avatar{
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--white);
+    border-radius: 20px;
+}
+
+.sectionAvatar h2{
+    color: var(--fontColorUm);
+    margin: auto 15px;
+    font-size: 16px;
+}
+
+.sectionAvatar span{
+    color: var(--white);
+}
+
+.sectionAvatar span:hover{
+    color: var(--fontColorDestak);
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution p{
+    color: var(--white);
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 360px){
+
+    main{
+        width: 90%;
+        height: 100%;
+    }
+
+    main .nft{
+        width: 80%;
+        height: 250px;
+    }
+
+    .overlay {
+        width: 80%;
+        height: 250px;
+    }
+
+}
