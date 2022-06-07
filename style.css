@@ -91,7 +91,13 @@ article p{
     flex-wrap: wrap; 
 }
 
-.price p{
+.price img{
+    width: 12px;
+    height: 20px;
+}
+
+.price h2{
+    font-size: 16px;
     margin-left: 8px;
 }
 
@@ -101,7 +107,13 @@ article p{
     flex-wrap: wrap;
 }
 
-.days p{
+.days img{
+    width: 20px;
+    height: 20px;
+}
+
+.days h2{
+    font-size: 16px;
     margin-left: 8px;
 }
 
@@ -125,9 +137,10 @@ section .avatar{
     border-radius: 20px;
 }
 
-.sectionAvatar p{
+.sectionAvatar h2{
     color: var(--fontColorUm);
     margin: auto 15px;
+    font-size: 16px;
 }
 
 .sectionAvatar span{
